@@ -142,7 +142,7 @@ struct TimerView: View {
                 .accessibilityLabel(timerViewModel.isTimerRunning ? "Pause timer" : (timerViewModel.isTimerPaused ? "Resume timer" : "Start timer"))
                 .accessibilityHint(timerViewModel.isTimerRunning ? "Pause temporarly the timer." : "Start or resume the selected timer")
                 
-                // buttton to reset
+                // button to reset
                 Button("Reset") {
                     timerViewModel.resetTimer()
                 }
